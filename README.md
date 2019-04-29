@@ -9,7 +9,7 @@ o qüestions de força major.
 1) Quin serà el resultat obtingut desprès d’executar la funció Exemple ?
 
 ```plsql
-FCreate function Exemple() returns Integer as $$
+Create function Exemple() returns Integer as $$
 Declare
 	Valor integer := 50;
 Begin
