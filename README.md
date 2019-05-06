@@ -163,6 +163,7 @@ l’idalumne).
 ```plsql
 CREATE OR REPLACE FUNCTION deleteAlumne(id int) RETURNS VARCHAR As $$
 BEGIN
+	DELETE FROM Notes WHERE idalumne = id;
 	DELETE FROM Alumne WHERE idalumne = id;
 
 	RETURN 'Delete executat correctament';
